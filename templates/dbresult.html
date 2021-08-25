@@ -1,0 +1,105 @@
+{% load static %}
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    <link rel="stylesheet" href="{% static 'css/resultDB.css' %}" />
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="width: 1500px;">
+        <div class="container-fluid" style="margin-left: 10px;">
+            <a class="navbar-brand"><b><i class="fas fa-cloud-sun-rain fa-2x"></i></b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0  nav-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#team">Team</a>
+                    </li>
+                    <li class="nav-itemr">
+                        <a class="nav-link" href="contactUs">Contact us</a>
+                    </li>
+                    <li class="nav-itemr">
+                        <a href="input"><button class="btn btn-outline-success btn-sm test-button">Test Again</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div">
+        <h1 style="text-align: center;width: 1500px">Prediction Results</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">NAME</th>
+                    <th scope="col">YEAR</th>
+                    <th scope="col">Average Rainfall</th>
+                    <th scope="col">Catchment Area</th>
+                    <th scope="col">Population</th>
+                    <th scope="col">Losses</th>
+                    <th scope="col">Yield</th>
+                    <th scope="col">Yield After Losses</th>
+                    <th scope="col">Demand</th>
+                    <th scope="col">Capacity Of Lake</th>
+                    <th scope="col">Deficit</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in dataset %}
+                <tr>
+                    <td>{{ data.name }}</td>
+                    <td>{{ data.year }}</td>
+                    <td>{{ data.avg_rainfall }}</td>
+                    <td>{{ data.catchmentArea }}</td>
+                    <td>{{ data.population }}</td>
+                    <td>{{ data.losses }}</td>
+                    <td>{{ data.yeild }}</td>
+                    <td>{{ data.yeild_after_losses }}</td>
+                    <td>{{ data.demand }}</td>
+                    <td>{{ data.capacity_of_lake }}</td>
+                    <td>{{ data.deficit }}</td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+    <div id="footer" style="width: 1500px">
+        <footer class="white-section">
+            <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
+            <a href=""><i class="social-icon fab fa-twitter"></i></a>
+            <a href=""><i class="social-icon fab fa-instagram"></i></a>
+            <a href=""><i class=" social-icon fab fa-linkedin"></i></a>
+            <p>© Copyright 2021 | Free to use</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

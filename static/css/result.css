@@ -1,0 +1,320 @@
+body{
+    font-family: 'Courgette', cursive;
+    background-color: #adefd1ff;
+}
+
+.navbar{
+    background-color: #2E4A62;
+}
+
+#navbarSupportedContent{
+    text-align: center;  
+}
+
+.navbar-toggler,
+.navbar-toggler-icon{
+    border:2px solid #adefd1ff;
+}
+
+.navbar-brand,.nav-link{
+    color: #adefd1ff;
+}
+
+.navbar-brand:hover,.nav-link:hover{
+    color: #adefd1ff;
+    transform: scale(1.1);
+}
+
+.container-fluid{
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: 800;
+}
+
+.nav-center{
+    width: max-content;
+    margin: 0px auto;
+}
+
+.test-button{
+    position: absolute;
+    top: 13px;
+    width: 150px;
+    border-radius: 25px;
+    right: 20px;
+    color: #adefd1ff;
+}
+
+.col-left-first{
+    width: fit-content;
+    margin: 50px auto 0px;
+}
+
+.col-right{
+    text-align: center;
+    width:400px;
+    padding-top: 60px;
+    margin: 0px auto;
+}
+
+.input-group{
+    padding: 10px;
+}
+
+.input-group > span{
+    background-color: #2E4A62;
+    color:#adefd1ff
+}
+
+.input-group input{
+    background-color: #adefd1ff;
+}
+
+#result{
+    display: none;
+}
+
+.analysis{
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.analysis h3{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+
+/* BAR GRAPH */
+
+@media screen and (min-width: 768px){
+  .leftside, .rightside{
+      width: 100%;
+  }
+  
+  .row{
+    height: auto;
+  }
+}
+
+
+#navbar{
+padding: 20px 0px !important;
+margin-bottom: 60px;
+}
+
+#leftside div{
+height: 48px;
+}
+
+#leftside{
+position: relative;
+width: 50%;
+left: 30px;
+bottom: 30px;
+}
+
+.left{
+position: absolute;
+left: 0px;
+}
+
+.right{
+position: absolute;
+right: 0px;
+}
+
+.checkfloat{
+  width: 25%;
+  float: left;
+
+}
+
+
+.chart{
+width: 600px;
+height: 300px;
+display: block;
+float: right;
+}
+
+.barmove{
+  float: right;
+}
+
+.numbers{
+color: #333;
+margin: 0;
+padding: 0;
+width: 50px;
+height: 100%;
+display: inline-block;
+float: left;
+}
+
+.numbers li{
+list-style: none;
+height: 150px;
+position: relative;
+bottom: 145px;
+}
+
+.numbers span{
+font-size: 12px;
+font-weight: 600;
+position: absolute;
+bottom: 0;
+right: 10px;
+}
+
+.bars{
+
+color: #333;
+font-size: 12px;
+font-weight: 600;
+background: rgb(0, 0, 0);
+margin: 0;
+padding: 0;
+display: inline-block;
+width: 350px;
+height: 300px;
+box-shadow: 0 0 10px 0 #333;
+border-radius: 5px;
+float: left;
+}
+
+.bars li{
+display: table-cell;
+width: 100px;
+height: 300px;
+position: relative;
+}
+
+.bars span{
+width: 100%;
+position: absolute;
+bottom: -30px;
+text-align: center;
+}
+
+.bars .bar{
+display: block;
+background: #17C0EB;
+width: 50px;
+position: absolute;
+bottom: 0;
+margin-left: 25px;
+text-align: center;
+box-shadow: 0 0 10px 0 rgba(17, 148, 180, 0.5);
+transition: 0.5s;
+transition-property: background, box-shadow;
+}
+
+.bars .bar:hover{
+background: #4fb89a;
+box-shadow: 0 0 10px 0 rgba(70, 131, 114, 0.5);
+cursor: pointer;
+}
+
+.bars .bar:before{
+color: #fff;
+content: attr(data-percentage) ;
+position: relative;
+bottom: 20px;
+}
+
+.circle {
+width: 400px;
+height: 400px;
+margin: 0 auto;
+border-radius: 50%;
+background: skyblue;
+position: relative;
+}
+
+.content{
+  position: absolute;
+  width: inherit;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: Arial;
+  color: #fff;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.triangle-right {
+width: 0;
+height: 0;
+border-top: 250px solid transparent;
+border-left: 500px solid #555;
+border-bottom: 250px solid transparent;
+float: right;
+}
+
+#yes,#no{
+    margin:30px;
+}
+
+#footer{
+    height: 150px;
+    background-color: #2E4A62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    font-size: 24px;
+    text-align: center;
+    width: 50%;
+    margin:0px auto;
+}
+
+.social-icon {
+    color: #adefd1ff;
+    margin: 20px 10px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+.conc{
+    font-size: 70px;
+}
+.concmess{
+    font-size: 50px;
+}
+.bardiv{
+    margin-top: 50px; left:150px ; display: flex;justify-content: center;height: 400px;
+}
+@media only screen and (max-width: 768px) {
+    .bars{
+        width: 80%;
+    }
+    .bardiv{
+        margin-top: 100px;
+    }
+    #yes,#no{
+        width: 350px;
+    }
+    .test-button{
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+    .conclusion{
+        margin-top: 30px;
+        width: 350px;
+    }
+    .conc{
+        font-size: 50px;
+    }
+    .concmess{
+        font-size: 30px;
+    }
+    .viewbutton{
+        padding-bottom: 20px;
+    }
+  }

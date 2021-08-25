@@ -1,0 +1,65 @@
+body {
+    font-family: 'Courgette', cursive;
+    background-color: #adefd1ff;
+    color: #2E4A62;
+}
+ 
+.navbar {
+    background-color: #2E4A62;
+}
+
+#navbarSupportedContent {
+    text-align: center;
+}
+
+.navbar-toggler, .navbar-toggler-icon {
+    border: 2px solid #adefd1ff;
+}
+
+.navbar-brand, .nav-link {
+    color: #adefd1ff;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #adefd1ff;
+    transform: scale(1.1);
+}
+
+.container-fluid {
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: 800;
+}
+
+.nav-center {
+    width: max-content;
+    margin: 0px auto;
+}
+
+#footer{
+    background-color: #2E4A62;
+}
+
+footer {
+    font-size: 24px;
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.social-icon {
+    color: #adefd1ff;
+    margin: 20px 10px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+.col-lg-6{
+    padding: 40px 95px;
+}
+@media only screen and (max-width: 990px) {
+    .col-lg-6{
+        padding: 20px 20px;
+    }
+}

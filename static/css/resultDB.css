@@ -1,0 +1,76 @@
+body {
+    background-color: #adefd1ff;
+    font-family: 'Courgette', cursive;
+}
+
+.navbar {
+    background-color: #2E4A62;
+}
+
+#navbarSupportedContent {
+    text-align: center;
+}
+
+.navbar-toggler, .navbar-toggler-icon {
+    border: 2px solid #adefd1ff;
+}
+
+.navbar-brand, .nav-link {
+    color: #adefd1ff;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #adefd1ff;
+    transform: scale(1.1);
+}
+
+.container-fluid {
+    text-align: center;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: 800;
+}
+
+.nav-center {
+    width: max-content;
+    margin: 0px auto;
+}
+
+.test-button {
+    position: absolute;
+    top: 13px;
+    width: 150px;
+    border-radius: 25px;
+    right: 20px;
+    color: #adefd1ff;
+}
+
+#footer {
+    height: 150px;
+    background-color: #2E4A62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    font-size: 24px;
+    text-align: center;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.social-icon {
+    color: #adefd1ff;
+    margin: 20px 10px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 990px) {
+    .test-button {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+}
